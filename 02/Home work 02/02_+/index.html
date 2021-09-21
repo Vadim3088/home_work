@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form>
+        <fieldset>
+            <legend>Общие данные</legend>
+            <label for="field"> Заблокированное поле </label>
+            <input type="text" id="field" style="position:absolute;left:12%;" value="Заблокированное поле" disabled>
+            <br>
+            <br>
+            <label for="text"> Какой-то текст </label>
+            <input type="text" id="text" style="position:absolute;left:12%;" value="Меня только читать" readonly>
+            <br>
+            <br>
+            <label for="pet"> Имя питомца </label>
+            <input type="text" id="pet" style="position:absolute;left:12%;" placeholder="Барсик">
+            <br>
+            <br>
+            <label for="e-mail"> Ваш e-mail </label>
+            <input type="text" id="e-mail" style="position:absolute;left:12%;" placeholder="12345@gmail.com">
+            <br>
+            <br>
+            <label for="secret"> Секретный пароль </label>
+            <input type="password" id="secret" style="position:absolute;left:12%;">
+            <br>
+            <br>
+            <label for="date"> Дата рождения </label>
+            <input type="date" id="date" style="position:absolute;left:12%;">
+            <br>
+            <br>
+            <label for="number"> Высота дома напротив </label>
+            <input type="number" id="number" style="position:absolute;left:12%;">
+            <br>
+            <br>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Другая информация</legend>
+            <label for="color">Любимый цвет соседа</label>
+            <input type="color" id="color" style="position:absolute;left:12%;">
+            <br>
+            <br>
+            <br>
+            <label>Телефон поддержки</label>
+            <input type="tel" style="position:absolute;left:12%;">
+            <br>
+            <br>
+            <label>Время следующего занятия</label>
+            <input type="time" style="position:absolute;left: 12%;">
+            <br>
+            <br>
+            <label>Ссылка на любимый сайт</label>
+            <input type="url" style="position:absolute;left:12%;" placeholder="google.com">
+            <br>
+            <br>
+            <label>Число от 1 до 10</label>
+            <input type="range" style="position:absolute;left:12%;">
+            <br>
+            <br>
+            <label>Поделись картинкой</label>
+            <input type="file" style="position:absolute;left:12%;">
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Не input-ы</legend>
+            <label for="drink">Любимый напиток</label>
+            <select id="drink">
+                <optgroup label="Не алкоголь">
+                    <option value="Чай"> Чай</option>
+                    <option value="Кофе"> Кофе</option>
+                    <option value="Сок"> Сок</option>
+                </optgroup>
+                <optgroup label="Алкоголь">
+                    <option value="Вино"> Вино</option>
+                    <option value="Водка"> Водка</option>
+                    <option value="Коньяк"> Коньяк</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <label>Коментарий на свободную тему</label>
+            <textarea rows="10" cols="45" name="text"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label>Кнопочки</label>
+            <input type="submit" value="Отправить">
+            <input type="submit" value="Сбросить">
+            <input type="submit" value="Просто кнопка">
+            <input type="submit" value="Заблокированная" disabled>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
