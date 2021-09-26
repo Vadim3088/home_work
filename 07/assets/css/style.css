@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.icon {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: #1275b9;
+    background-image: url();
+    background-repeat: no-repeat;
+    border: 1px solid #1275b9;
+    display: inline-block;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.icon:hover {
+    background-color: #fff;
+}
+
+.icon_tablet {
+    background-position: 19px 16px;
+}
+.icon_tablet:hover {
+    background-position: 19px -56px;
+}
+
+.icon_cog {
+    background-position: -82px 16px;
+}
+.icon_cog:hover {
+    background-position: -82px -56px;
+}
+
+.icon_dash {
+    background-position: 191px 16px;
+}
+.icon_dash:hover {
+    background-position: 191px -56px;
+}
+
