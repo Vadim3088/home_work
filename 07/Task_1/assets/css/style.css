@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #9d9d9d;
+    font-size: 14px;
+}
+
+/*ul, ol {
+    list-style: none;
+}*/
+
+.layout {
+    background-color: #f8f6f6;
+    padding: 56px 0 64px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.container_item {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    width: 233px;
+    margin-left: 87px;
+}
+
+.container_item h3 {
+    color: #1a0000;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.icon {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: #1275b9;
+    background-image: url('../images/Sprite.png');
+    background-repeat: no-repeat;
+    border: 1px solid #1275b9;
+    display: inline-block;
+    overflow: hidden;
+    transition: all .2s ease;
+}
+
+.icon:hover {
+    background-color: #fff;
+}
+
+.icon_tablet {
+    background-position: 18px 15px;
+}
+.icon_tablet:hover {
+    background-position: 18px -75px;
+}
+
+.icon_cog {
+    background-position: -92px 14px;
+}
+.icon_cog:hover {
+    background-position: -92px -75px;
+}
+
+.icon_dash {
+    background-position: -211px 15px;
+}
+.icon_dash:hover {
+    background-position: -211px -75px;
+}
+
