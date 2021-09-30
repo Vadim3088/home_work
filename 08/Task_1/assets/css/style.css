@@ -4,3 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    font-family: 'Montserrat', 'PT Sans', sans-serif;
+}
