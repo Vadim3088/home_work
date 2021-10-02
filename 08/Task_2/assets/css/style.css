@@ -12,5 +12,63 @@ html, body {
 body {
     border: 25px solid #2b81ac;
     background-color: #3399cc;
+    color: #fff;
 }
+
+.container {
+    width: 90%;
+    max-width: 986px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.w_forecast_1 {
+    background-color: #3399cc;
+}
+
+.w_forecast_2 {
+    background-color: #33cccc;
+}
+
+.w_forecast_3 {
+    background-color: #996699;
+}
+
+.w_forecast_4 {
+    background-color: #c24747;
+}
+
+.w_forecast_5 {
+    background-color: #e2674a;
+}
+
+.w_forecast_6 {
+    background-color: #ffcc66;
+}
+
+.w_forecast_7 {
+    background-color: #99cc99;
+}
+
+.w_forecast_8 {
+    background-color: #669999;
+}
+
+.w_forecast_9 {
+    background-color: #cc6699;
+}
+
+.w_forecast_10 {
+    background-color: #339966;
+}
+
+.w_forecast_11 {
+    background-color: #666699;
+}
+
 
