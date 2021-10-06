@@ -30,7 +30,6 @@ body {
     gap: 15px;
 }
 
-
 .block_content_img img {
     width: 100%;
 }
@@ -60,7 +59,7 @@ body {
     font-size: 13px;
     opacity: .8;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .main_content_text p {
@@ -76,12 +75,12 @@ body {
 
 .secondary_content_text {
     width: 300px;
-    margin-left: 30px;
-    margin-top: 15px;
+    margin-left: 28px;
+    margin-top: 18px;
 }
 
 .secondary_content_text span {
-    display: inline-block;
+    display: block;
     font-size: 13px;
     opacity: .7;
     margin-bottom: 15px;
@@ -89,12 +88,13 @@ body {
 
 .secondary_content_text p {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 900;
+    
 }
 
 .secondary_content_icon {
     position: absolute;
-    bottom: 25px;
+    bottom: 22px;
     left: 25px;
 }
 
