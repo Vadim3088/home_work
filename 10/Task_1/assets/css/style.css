@@ -23,7 +23,7 @@ body {
 }
 
 .text {
-    padding: 125px 125px;
+    padding: 115px 125px;
 }
 
 .text h1 {
@@ -36,9 +36,10 @@ body {
 
 p {
     display: block;
+
     font-size: 19px;
     margin: 20px 0;
-    line-height: 36px;
+    line-height: 37px;
     opacity: .6;
 }
 
@@ -46,7 +47,7 @@ h1+p::first-letter {
     font-family: 'Playfair Display';
     float: left;
     color:black;
-    font-size: 120px;
+    font-size: 110px;
     padding: 28px 30px 17px 0;
 }
 
@@ -55,10 +56,12 @@ blockquote {
     font-style: italic;
     font-weight: 400;
     opacity: .6;
+    margin-top: -10px;
 }
 
 blockquote span {
-    font-size: 55px;
+    font-style: normal;
+    font-size: 48px;
     margin-right: 15px;
 }
 
