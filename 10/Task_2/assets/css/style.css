@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-family: 'FuturaPT', 'Proxima Nova', sans-serif;
+    background-color: #434d51;
+
+}
+
+#panel {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 63%;
+}
+
+.panel_1 {
+    height: 187px;
+    width: 100%;
+    background-color: #181818;
+}
+
+.panel_1 label {
+    position: absolute;
+    font-family: 'Proxima Nova';
+    font-size: 15px;
+    color: #fff;
+    opacity: .5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    top: 40px;
+    left: 64px;
+}
+
+.panel_1 input {
+    position: absolute;
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    line-height: 72px;
+    color: #fff;
+    background-color: #181818;
+    top: 58px;
+    left: 60px;
+    width: calc(100% - 60px);
+    border: none;
+    border-bottom: 2px solid #303030;
+}
+
+.panel_2 {
+    display: inline-block;
+    width: calc(100% - 64px);
+    height: 77px;
+    margin-left: 64px;
+    background-color: #f8be2c;
+}
+
+.button_panel {
+    margin-left: 20px;
+}
+
+.btn {
+    border: 0;
+    background: none;
+    font-size: 36px;
+    color: #fff;
+    opacity: .5;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    color: #fff;
+    opacity: 1.0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1060px;
+    margin: 0 auto;
+    /*position: relative;*/
+    background-color: #fff;
+    margin-top: 150px;
+    padding: 0 120px;
+}
+
+/*.container::before {
+    content: '';
+    position: absolute;
+    border-left: 4px solid red;
+    margin-left: -40px;
+}*/
+
+.container_line {
+    border-left: 2px solid #e8eced;
+    margin-left: -50px;
+    padding: 0 50px;
+}
+
+.content span {
+    display: inline-block;
+    font-family: 'Proxima Nova';
+    text-transform: uppercase;
+    font-size: 20px;
+    opacity: .5;
+    margin-top: 195px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: 'FuturaPT';
+    font-size: 78px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+    opacity: .5;
+    margin-bottom: 25px;
+}
+
+p {
+    display: inline-block;
+    font-family: Georgia;
+    font-size: 27px;
+    line-height: 40px;
+    margin: 15px 0;
+}
