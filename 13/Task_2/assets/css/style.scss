@@ -43,7 +43,7 @@ body {
     .block {
         width: 100%;
         height: 100%;
-        padding: 40px 60px;
+        padding: 40px 65px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -55,7 +55,7 @@ body {
             &__list {
                 list-style: none;
                 display: flex;
-                justify-content: space-around;
+                justify-content: flex-start;
                 width: 100%;
 
                 .list {
@@ -65,23 +65,7 @@ body {
                         opacity: .7;
                         position: relative;
                         cursor: pointer;
-
-                        &--bottom {
-                            color: #fff;
-                            font-size: 13px;
-                            line-height: 20px;
-                            opacity: .6;
-                            position: relative;
-                            cursor: pointer;
-                            border-bottom: 2px solid #473db3;
-
-                            &:hover {
-                                transform: scale(1.05);
-                                opacity: 1;
-                                border-bottom: 2px solid #7e7aa5;
-
-                            }
-                        }
+                        margin-right: 25px;                       
 
                         &:hover {
                             transform: scale(1.05);
@@ -92,6 +76,22 @@ body {
                 }
 
             }
+            
+        }
+
+        .checkbox {
+            width: 100%;
+            display: flex;
+            justify-content: left;  
+             
+            &__text {
+                display: inline-block;
+                font-size: 13px;
+                margin-left: 5px;
+                color: #fff;
+            }
+
+            
         }
 
         .form {
@@ -100,7 +100,10 @@ body {
             &__item {
                 input {
                     width: 100%;
+                    height: 42px;
                     background-color: none;
+                    outline: none;
+                    background: none;
                 }
             }
 
@@ -129,11 +132,32 @@ body {
             }
 
         }
+
+        .bottom {
+            width: 100%;
+
+            &__element {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+                .list {
+                    &__item {
+                        color: #fff;
+                        font-size: 13px;
+                        line-height: 20px;
+                        opacity: .6;
+                        position: relative;
+                        cursor: pointer;
+                        border-bottom: 2px solid #473db3; 
+                    
+                        &:hover {
+                            transform: scale(1.05);
+                            opacity: 1;
+                            border-bottom: 2px solid #7e7aa5;
+                        }
+                    }
+                }
+            }
+        }
     }
-
-
-
-
-
-
 }

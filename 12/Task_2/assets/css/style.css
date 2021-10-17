@@ -18,13 +18,12 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 body {
   font-family: "Raleway", sans-serif;
-  /*font-size: 1rem;*/
 }
 
 header {
@@ -34,6 +33,7 @@ header {
   top: 0;
   height: 100px;
   transition: all 0.2s ease;
+  z-index: 2;
 }
 header .header_container {
   height: 100%;
@@ -90,12 +90,11 @@ header.scrolled {
 
 .section_fresh {
   width: 100%;
-  background: url("../images/background_fresh.png") center center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 103vh;
+  height: 100vh;
 }
 .section_fresh .content_fresh {
   width: 40%;
