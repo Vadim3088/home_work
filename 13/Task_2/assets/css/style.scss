@@ -86,13 +86,44 @@ body {
         .checkbox {
             width: 100%;
             display: flex;
-            justify-content: left;  
+            justify-content: left;
+            input[type="checkbox"] {
+                display: none;
+            }
+            label {
+                position: relative;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background-color: #23ae92;
+                    border: 1px solid #b0b0b0;
+                    
+                    position: absolute;
+                    top: 3px;
+                    left: 0px;
+                }
+                &::after {
+                    content: '';
+                    display: inline-block ;
+                    width: 12px;
+                    height: 8px;
+                    border-left: 3px solid #fff;
+                    border-bottom: 3px solid #fff;
+                    transform: rotate(-45deg);
+                    position: absolute;
+                    top: 4px;
+                    left: 2px;
+                }
+            }
              
             &__text {
                 display: inline-block;
                 font-size: 13px;
                 margin-left: 5px;
                 color: #fff;
+                margin-left: 20px;
             }
 
             
