@@ -18,6 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #e5eeee;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .container {
@@ -51,6 +53,7 @@ body {
 
         .menu {
             width: 100%;
+            padding-bottom: 20px;
 
             &__list {
                 list-style: none;
@@ -61,6 +64,7 @@ body {
                 .list {
                     &__item {
                         color: #fff;
+                        font-size: 18px;
                         line-height: 20px;
                         opacity: .7;
                         position: relative;
@@ -122,6 +126,7 @@ body {
                 color: #fff;
                 border: none;
                 text-align: center;
+                font-size: 18px;
                 line-height: 40px;
                 cursor: pointer;
 
