@@ -69,7 +69,8 @@ body {
                         opacity: .7;
                         position: relative;
                         cursor: pointer;
-                        margin-right: 25px;                       
+                        margin-right: 25px;
+                        border-bottom: 2px solid transparent;                       
 
                         &:hover {
                             transform: scale(1.05);
@@ -78,9 +79,7 @@ body {
                         }
                     }
                 }
-
-            }
-            
+            }    
         }
 
         .checkbox {
@@ -99,23 +98,24 @@ body {
                     height: 16px;
                     background-color: #23ae92;
                     border: 1px solid #b0b0b0;
-                    
+                    cursor: pointer;
                     position: absolute;
                     top: 3px;
                     left: 0px;
                 }
-                &::after {
-                    content: '';
-                    display: inline-block ;
-                    width: 12px;
-                    height: 8px;
-                    border-left: 3px solid #fff;
-                    border-bottom: 3px solid #fff;
-                    transform: rotate(-45deg);
-                    position: absolute;
-                    top: 4px;
-                    left: 2px;
-                }
+            }
+            input[type="checkbox"]:checked + label::after {
+                content: '';
+                display: inline-block ;
+                width: 12px;
+                height: 8px;
+                border-left: 3px solid #fff;
+                border-bottom: 3px solid #fff;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 4px;
+                left: 2px;
+                cursor: pointer;
             }
              
             &__text {
@@ -124,9 +124,7 @@ body {
                 margin-left: 5px;
                 color: #fff;
                 margin-left: 20px;
-            }
-
-            
+            }    
         }
 
         .form {
@@ -166,7 +164,6 @@ body {
                     background-color: darken(#23ae92, 5);
                 }
             }
-
         }
 
         .bottom {
