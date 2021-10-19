@@ -71,7 +71,8 @@ body {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #1f273f
+        background-color: #1f273f;
+        cursor: pointer;
     }
 
     &__element:hover {
@@ -196,13 +197,12 @@ body {
         width: 69px;
         height: 32px;
         text-align: center;
+        cursor: pointer;
     }
 }
 
 .text {
     &__size {
-        text-align: center;
-        opacity: .5;
         color: #797d84;
     }
 }
@@ -221,5 +221,6 @@ body {
 
     &__btn:hover {
         background-color: #202835;
+        transform: scale(1.05);
     }
 }
