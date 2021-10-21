@@ -1,0 +1,595 @@
+@media screen and (max-width: 1350px) {
+  .section_subscribe .down_block_subscribe {
+    flex-wrap: wrap;
+  }
+  .section_subscribe .down_block_subscribe .btn_subscribe {
+    width: 60%;
+  }
+  .section_subscribe .down_block_subscribe .subscribe_form {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about_section .bloks_about .text_about {
+    width: 60%;
+  }
+  .about_section .bloks_about .text_about h2 {
+    font-size: 4.375rem;
+  }
+  .section_gallery .container .gallery_text h2 {
+    font-size: 4.375rem;
+  }
+  .section_gallery .container .gallery_text p {
+    width: 70%;
+  }
+  .blog_section .container .flex_blog .h2_blog {
+    font-size: 4.375rem;
+    margin-bottom: 15px;
+  }
+  .blog_section .container .flex_blog .articles {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .blog_section .container .flex_blog .articles .block_blog {
+    margin-bottom: 30px;
+  }
+  .section_services .block_servises {
+    padding: 12% 0 12% 10%;
+  }
+
+  .section_subscribe {
+    padding: 120px 0;
+  }
+  .section_subscribe .subscribe_text {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .fresh_section .content_fresh {
+    width: 50%;
+  }
+  .section_services .block_servises .block_link {
+    height: 460px;
+  }
+
+  .section_subscribe {
+    padding: 110px 0;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .section_services .block_servises {
+    padding: 10% 0 10% 5%;
+    background-size: 50% auto;
+  }
+  .section_services .block_servises .block_link {
+    height: 400px;
+  }
+  .section_services .block_servises .block_link li a {
+    font-size: 1.125rem;
+    line-height: 20px;
+  }
+
+  .section_subscribe {
+    padding: 100px 0;
+  }
+  .section_subscribe .subscribe_text {
+    width: 55%;
+  }
+  .section_subscribe .subscribe_form .field_form_subscribe {
+    width: 400px;
+  }
+  .section_subscribe .btn_subscribe .btn_green {
+    width: 140px;
+  }
+
+  .contact_section .container .name_contact_section p {
+    width: 65%;
+  }
+  .contact_section .container .blocks_contact .contact_block_right {
+    width: 45%;
+  }
+  .contact_section .container .blocks_contact .contact_block_left .contact_form .form {
+    width: 370px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_section .bloks_about .text_about {
+    width: 85%;
+  }
+  .about_section .bloks_about .text_about h2 {
+    font-size: 3.75rem;
+  }
+  .about_section .bloks_about .text_about p {
+    line-height: 20px;
+  }
+
+  .blog_section .container .flex_blog .p_blog {
+    width: 80%;
+  }
+  .blog_section .container .flex_blog .articles .block_blog {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    height: 80px;
+  }
+  header .container #logo {
+    width: 20%;
+  }
+
+  #header_menu {
+    display: none;
+  }
+
+  #hamburger_menu {
+    display: block;
+  }
+
+  .fresh_section .container {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .fresh_section .content_fresh {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.8), transparent);
+  }
+  .fresh_section .content_fresh h1 {
+    font-size: 3.25rem;
+    line-height: 60px;
+  }
+  .fresh_section .content_fresh p {
+    width: 90%;
+  }
+  .fresh_section .content_fresh .btn_orange {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .section_services .block_servises {
+    padding: 10% 0 10% 3%;
+  }
+  .section_services .block_servises .block_link {
+    height: 360px;
+    width: 42%;
+  }
+  .section_services .block_servises .block_link li a {
+    font-size: 1.125rem;
+  }
+  .section_services .block_servises .block_link li .image_link {
+    width: 20%;
+  }
+  .section_services .block_servises .block_image {
+    width: 50%;
+  }
+  .section_services .block_servises .block_image h2 {
+    font-size: 4.0625rem;
+    letter-spacing: 0;
+  }
+
+  .section_gallery {
+    padding: 5vh 0;
+  }
+  .section_gallery .container .gallery_text {
+    margin-bottom: 20px;
+  }
+  .section_gallery .container .gallery_text h2 {
+    font-size: 4.0625rem;
+  }
+  .section_gallery .container .gallery_text p {
+    width: 90%;
+  }
+  .section_gallery .container .gallery_pic .big_small {
+    margin-bottom: 16px;
+  }
+  .section_gallery .container .gallery_pic .big_small .pic_big {
+    width: calc(66.6666% - 8px);
+  }
+  .section_gallery .container .gallery_pic .big_small .pic_big:hover {
+    transform: scale(1.2);
+  }
+  .section_gallery .container .gallery_pic .big_small .two_small_pic {
+    width: calc(33.3333% - 8px);
+  }
+  .section_gallery .container .gallery_pic .big_small .two_small_pic .pic {
+    height: calc(50% - 8px);
+  }
+  .section_gallery .container .gallery_pic .big_small .two_small_pic .pic:hover {
+    transform: scale(1.2);
+  }
+  .section_gallery .container .gallery_pic .two_middle_pic .pic {
+    width: calc(50% - 8px);
+  }
+  .section_gallery .container .gallery_pic .two_middle_pic .pic:hover {
+    transform: scale(1.2);
+  }
+  .section_gallery .container .btn_blue_gallery {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .section_subscribe {
+    padding: 5vh 0;
+  }
+  .section_subscribe .container .subscribe_text {
+    width: 100%;
+  }
+  .section_subscribe .container .subscribe_text h2 {
+    font-size: 2.125rem;
+  }
+  .section_subscribe .container .subscribe_text p {
+    width: 80%;
+  }
+  .section_subscribe .container .subscribe_form {
+    width: 74%;
+  }
+  .section_subscribe .container .subscribe_form .field_form_subscribe {
+    height: 40px;
+  }
+  .section_subscribe .container .btn_subscribe {
+    width: 30%;
+  }
+  .section_subscribe .container .btn_subscribe .btn_green {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .blog_section .container .flex_blog .h2_blog {
+    font-size: 4.0625rem;
+  }
+  .blog_section .container .flex_blog .p_blog {
+    width: 100%;
+  }
+  .blog_section .container .flex_blog .articles .block_blog {
+    margin-bottom: 15px;
+    width: 270px;
+    height: 210px;
+  }
+  .blog_section .container .flex_blog .articles .block_blog .img_section_blog {
+    width: 270px;
+    height: 210px;
+  }
+  .blog_section .container .flex_blog .articles .block_blog:hover .date_block_blog {
+    left: 15px;
+    top: 15px;
+  }
+  .blog_section .container .flex_blog .btn_red {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .contact_section {
+    padding: 5vh 0;
+  }
+  .contact_section .container .name_contact_section h2 {
+    font-size: 4.0625rem;
+  }
+  .contact_section .container .name_contact_section p {
+    width: 90%;
+  }
+  .contact_section .container .blocks_contact .contact_block_right {
+    width: 35%;
+  }
+  .contact_section .container .blocks_contact .contact_block_left .contact_form .form {
+    width: 300px;
+  }
+  .contact_section .container .blocks_contact .contact_block_left .btn_blue {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about_section {
+    padding: 5vh 0;
+  }
+  .about_section .bloks_about {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .about_section .bloks_about .img_about {
+    width: 70%;
+  }
+  .about_section .bloks_about .text_about {
+    width: 100%;
+  }
+  .about_section .bloks_about .text_about h2 {
+    font-size: 4.0625rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about_section .bloks_about .text_about p {
+    line-height: 20px;
+    text-align: justify;
+  }
+
+  .section_services .block_servises {
+    padding: 10% 0;
+  }
+  .section_services .block_servises .block_link {
+    width: 45%;
+    height: 320px;
+  }
+  .section_services .block_servises .block_link li a {
+    font-size: 1rem;
+  }
+  .section_services .block_servises .block_image {
+    width: 50%;
+  }
+  .section_services .block_servises .block_image h2 {
+    font-size: 4.375rem;
+  }
+
+  .section_subscribe {
+    padding: 70px 0;
+  }
+  .section_subscribe .subscribe_text {
+    width: 63%;
+  }
+  .section_subscribe .subscribe_form .field_form_subscribe {
+    width: 300px;
+  }
+  .section_subscribe .btn_subscribe {
+    width: 25%;
+  }
+
+  .blog_section .container .flex_blog .h2_blog {
+    font-size: 4.0625rem;
+  }
+  .blog_section .container .flex_blog .p_blog {
+    width: 100%;
+  }
+  .blog_section .container .flex_blog .articles .block_blog {
+    margin-bottom: 25px;
+    width: 370px;
+    height: 310px;
+  }
+  .blog_section .container .flex_blog .articles .block_blog .img_section_blog {
+    width: 370px;
+    height: 310px;
+  }
+  .blog_section .container .flex_blog .articles .block_blog:hover .date_block_blog {
+    left: 35px;
+    top: 35px;
+  }
+  .blog_section .container .flex_blog .btn_red {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  footer .container p {
+    width: 30%;
+    line-height: 20px;
+  }
+  footer .container p:last-child {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: 60px;
+  }
+  .fresh_section .container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .fresh_section .content_fresh {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.8), transparent);
+  }
+  .fresh_section .content_fresh h1 {
+    font-size: 3.25rem;
+  }
+  .fresh_section .content_fresh p {
+    width: 90%;
+  }
+  .fresh_section .content_fresh .btn_orange {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .section_services .block_servises {
+    padding: 10% 0 10% 3%;
+  }
+  .section_services .block_servises .block_link {
+    height: 360px;
+    width: 42%;
+  }
+  .section_services .block_servises .block_link li .image_link {
+    width: 20%;
+  }
+  .section_services .block_servises .block_image {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .section_services .block_servises .block_image h2 {
+    font-size: 2.625rem;
+    letter-spacing: 0;
+  }
+
+  .section_gallery .container .gallery_text h2 {
+    font-size: 2.625rem;
+  }
+  .section_gallery .container .gallery_text p {
+    width: 100%;
+    line-height: 20px;
+  }
+  .section_gallery .container .gallery_pic {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .section_gallery .container .gallery_pic .big_small {
+    display: block;
+    margin-bottom: 0;
+  }
+  .section_gallery .container .gallery_pic .big_small .pic_big {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section_gallery .container .gallery_pic .big_small .two_small_pic {
+    display: block;
+    width: 100%;
+  }
+  .section_gallery .container .gallery_pic .big_small .two_small_pic .pic {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .section_gallery .container .gallery_pic .two_middle_pic {
+    display: block;
+  }
+  .section_gallery .container .gallery_pic .two_middle_pic .pic {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section_gallery .container .btn_blue_gallery {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .section_subscribe {
+    padding: 5vh 0;
+  }
+  .section_subscribe .container .subscribe_text {
+    width: 100%;
+  }
+  .section_subscribe .container .subscribe_text h2 {
+    font-size: 1.75rem;
+  }
+  .section_subscribe .container .subscribe_text p {
+    width: 90%;
+  }
+  .section_subscribe .container .subscribe_form {
+    width: 74%;
+  }
+  .section_subscribe .container .subscribe_form .field_form_subscribe {
+    height: 40px;
+  }
+  .section_subscribe .container .btn_subscribe {
+    width: 30%;
+  }
+  .section_subscribe .container .btn_subscribe .btn_green {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .blog_section .container .flex_blog .h2_blog {
+    font-size: 2.625rem;
+  }
+  .blog_section .container .flex_blog .p_blog {
+    width: 100%;
+    line-height: 20px;
+  }
+  .contact_section .container .name_contact_section h2 {
+    font-size: 2.625rem;
+  }
+  .contact_section .container .name_contact_section p {
+    width: 100%;
+    line-height: 20px;
+  }
+  .contact_section .container .blocks_contact {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contact_section .container .blocks_contact .contact_block_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contact_section .container .blocks_contact .contact_block_right .our_contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_section .container .blocks_contact .contact_block_right .our_contacts h5 {
+    font-size: 1rem;
+  }
+  .contact_section .container .blocks_contact .contact_block_right .our_contacts a {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section_subscribe {
+    background: url(../images/background_sub_small_3.png) center center no-repeat;
+    padding: 5vh 0;
+  }
+  .section_subscribe .container .subscribe_text {
+    width: 100%;
+  }
+  .section_subscribe .container .subscribe_text h2 {
+    font-size: 1.875rem;
+    font-weight: 800;
+  }
+  .section_subscribe .container .subscribe_text p {
+    width: 90%;
+    font-weight: 500;
+  }
+  .section_subscribe .container .subscribe_form {
+    width: 74%;
+  }
+  .section_subscribe .container .subscribe_form .field_form_subscribe {
+    height: 40px;
+  }
+  .section_subscribe .container .btn_subscribe {
+    width: 30%;
+  }
+  .section_subscribe .container .btn_subscribe .btn_green {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .blog_section .container .flex_blog .h2_blog {
+    font-size: 2.625rem;
+  }
+  .blog_section .container .flex_blog .p_blog {
+    width: 100%;
+    line-height: 20px;
+  }
+  .blog_section .container .flex_blog .articles .block_blog {
+    margin-bottom: 15px;
+    width: 270px;
+    height: 210px;
+  }
+  .blog_section .container .flex_blog .articles .block_blog .img_section_blog {
+    width: 270px;
+    height: 210px;
+  }
+  .blog_section .container .flex_blog .articles .block_blog:hover .date_block_blog {
+    left: 15px;
+    top: 15px;
+  }
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .container #logo_footer {
+    position: absolute;
+    right: 20px;
+    margin-left: 30px;
+    margin-top: 37px;
+  }
+  footer .container p {
+    width: 80%;
+    line-height: 20px;
+  }
+  footer .container p:first-child {
+    width: 90%;
+  }
+  footer .container p:last-child {
+    text-align: left;
+  }
+}
