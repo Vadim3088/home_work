@@ -17,7 +17,6 @@
 
     <div id="mobile_menu_wrap">
         <div id="sidemenu_top">
-
             <button class="hamburger hamburger--slider" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -25,7 +24,7 @@
             </button>
             <div class="mobile_logo">
                 <a href="#">
-                    <img src="assets/images/Logo.png" alt="">
+                    <img class="lazy" src="data:image/gif;base64,R0lGODlhBQACAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAIAAAIDjI8FADs=" data-src="assets/images/logo.png" alt="">
                 </a>
             </div>
         </div>
@@ -50,7 +49,7 @@
     <header>
         <div class="container">
             <div id="logo">
-                <a href="#"><img src="assets/images/Logo.png" alt="logo"></a>
+                <a href="#"><img class="lazy" data-src="assets/images/Logo.png" alt="logo"></a>
             </div>
             <nav id="header_menu">
                 <ul>
@@ -65,16 +64,16 @@
             <div id="hamburger_menu">
                 <button class="hamburger hamburger--slider" type="button">
                     <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
+                        <span class="hamburger-inner"></span>
                     </span>
-                  </button>
+                </button>
             </div>
         </div>
     </header>
 
     <main>
 
-        <div class="fresh_section">
+        <div class="fresh_section lazy-bg" data-src="assets/images/background_fresh.png">
             <div class="container">
                 <div class="content_fresh">
                     <h1>Fresh Life</h1>
@@ -84,7 +83,7 @@
                     <button class="btn_orange" type="button">get free now</button>
                 </div>
                 <div class="fresh_mouse">
-                    <img src="assets/images/mouse.png" alt="">
+                    <img class="lazy" data-src="assets/images/mouse.png" alt="">
                 </div>
             </div>
         </div>
@@ -93,9 +92,10 @@
             <div class="container">
                 <div class="bloks_about">
                     <div class="img_about">
-                        <img src="assets/images/plate_berries.png" alt="a plate with berries">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="assets/images/plate_berries.png" alt="a plate with berries">
                     </div>
-
                     <div class="text_about">
                         <h2>About Us</h2>
                         <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -117,36 +117,49 @@
         <div class="section_services">
             <div class="container">
                 <div class="block_servises">
-                    <ul class="block_link">
-                        <li>
-                            <a href="#">Online Shopping</a>
-                            <div class="image_link">
-                                <img src="assets/images/svg/shoping.svg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">Quality Product</a>
-                            <div class="image_link">
-                                <img src="assets/images/svg/hand.svg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">Domestic &#38; International Delivery</a>
-                            <div class="image_link">
-                                <img src="assets/images/svg/planet.svg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">Well Organized</a>
-                            <div class="image_link">
-                                <img src="assets/images/svg/carrot.svg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="block_image">
+                    <div class="block_servises_left">
+                        <ul class="block_link">
+                            <li>
+                                <a href="#">Online Shopping</a>
+                                <div class="image_link">
+                                    <img class="lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="assets/images/svg/shoping.svg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Quality Product</a>
+                                <div class="image_link">
+                                    <img class="lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="assets/images/svg/hand.svg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Domestic &#38; International Delivery</a>
+                                <div class="image_link">
+                                    <img class="lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="assets/images/svg/planet.svg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Well Organized</a>
+                                <div class="image_link">
+                                    <img class="lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="assets/images/svg/carrot.svg" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block_servises_right lazy-bg" data-src="assets/images/Tomato.png">
+                    <div class="services_name">
                         <h2>Our Services</h2>
                     </div>
                 </div>
+                </div>
+
             </div>
         </div>
                 
@@ -158,37 +171,46 @@
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.</p>
                 </div>
-                <div class="gallery_pic">   
+                <div class="gallery_pic">
                     <div class="big_small">
                         <div class="pic_big pic">
-                            <img src="assets/images/plate_peach.png" alt="">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
+                                data-src="assets/images/plate_peach.png" alt="">
                         </div>
                         <div class="two_small_pic">
                             <div class="pic">
-                                <img src="assets/images/blueberry`s_plate.png" alt="">
+                                <img class="lazy"
+                                    src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
+                                    data-src="assets/images/blueberry`s_plate.png" alt="">
                             </div>
                             <div class="pic">
-                                <img src="assets/images/mulberry.png" alt="">
+                                <img class="lazy"
+                                    src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
+                                    data-src="assets/images/mulberry.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="two_middle_pic">
                         <div class="pic">
-                            <img src="assets/images/cup_with_something.png" alt="">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
+                                data-src="assets/images/cup_with_something.png" alt="">
                         </div>
                         <div class="pic">
-                            <img src="assets/images/persimmon.png" alt="">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
+                                data-src="assets/images/persimmon.png" alt="">
                         </div>
                     </div>
-                </div>     
+                </div>
                 <div>
                     <button class="btn_blue_gallery" type="button">View more</button>
                 </div>
             </div>
         </div>
-      
-                   
-        <div class="section_subscribe">
+                         
+        <div class="section_subscribe lazy-bg" data-src="assets/images/background_sub.png">
             <div class="container">
                 <div class="subscribe_text">
                     <h2>Subscribe To Us</h2>
@@ -197,19 +219,15 @@
                 </div>
 
                 <div class="down_block_subscribe" action="#">
-
                     <form class="subscribe_form" action="">
                         <input class="field_form_subscribe" type="text" placeholder="Your email address...">
                     </form>
-                    
                     <div class="btn_subscribe">
                         <button type="button" class="btn_green">Subscribe</button>
                     </div>
                 </div>
-
             </div>
-        </div>   
-
+        </div>
 
         <div class="blog_section">
             <div class="container">
@@ -224,10 +242,12 @@
 
                     <div class="articles">
                         <div class="block_blog">
-                            <a href="#"><img class="img_section_blog" src="assets/images/smoothies.png"
-                                    alt="Smoothies"></a>
+                            <a href="#"><img class="img_section_blog lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-src="assets/images/smoothies.png" alt="Smoothies"></a>
                             <div class="date_block_blog">
                                 <p id="p_date_block_blog"><span class="number_date_block_blog">20</span><br>nov</p>
+
                             </div>
                             <div class="text_img_section_blog">
                                 <h4 class="h4_text_img_section_blog">Green Smoothies: Too Much of a Good Thing?</h4>
@@ -235,7 +255,9 @@
                             </div>
                         </div>
                         <div class="block_blog">
-                            <a href="#"><img class="img_section_blog" src="assets/images/soup.png" alt="Soup"></a>
+                            <a href="#"><img class="img_section_blog lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-src="assets/images/soup.png" alt="Soup"></a>
                             <div class="date_block_blog">
                                 <p class="p_date_block_blog"><span class="number_date_block_blog">14</span><br>nov
                                 </p>
@@ -246,8 +268,9 @@
                             </div>
                         </div>
                         <div class="block_blog">
-                            <a href="#"><img class="img_section_blog" src="assets/images/raspberries.png"
-                                    alt="Raspberries"></a>
+                            <a href="#"><img class="img_section_blog lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-src="assets/images/raspberries.png" alt="Raspberries"></a>
                             <div class="date_block_blog">
                                 <p class="p_date_block_blog"><span class="number_date_block_blog">10</span><br>nov
                                 </p>
@@ -263,7 +286,7 @@
             </div>
         </div>
 
-        <div class="contact_section">
+        <div class="contact_section lazy-bg" data-src="assets/images/background_contact.png">
             <div class="container">
                 <div class="name_contact_section">
                     <h2>Contact</h2>
@@ -313,15 +336,15 @@
 
     <footer>
         <div class="container">
-            <p>  &#169; 2015 Company. All right reserved</p>
+            <p> &#169; 2015 Company. All right reserved</p>
             <div id="logo_footer">
-                <a href="#"><img src="assets/images/Logo_white.png" alt="logo"></a>
+                <a href="#"><img class="lazy" src="data:image/gif;base64,R0lGODlhBQACAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAIAAAIDjI8FADs=" data-src="assets/images/logo_footer.png" alt="logo"></a>
             </div>
             <p>Made with <span>love</span> by Auskteez</p>
         </div>
     </footer>
 
-
+    <script src="assets/js/lazyload.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
     <script>
