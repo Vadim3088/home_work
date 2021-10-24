@@ -1,5 +1,7 @@
 @import "hamburger";
 
+//
+
 @mixin btn ($background-color) {
     background-color: $background-color;
     width: 200px;
@@ -26,6 +28,7 @@
     color: $color;
     font-weight: 200;
     font-size: 1rem;
+    ;
     line-height: 25px;
 }
 
@@ -114,6 +117,7 @@ img {
         justify-content: center;
         align-items: center;
         width: 100%;
+
         a {
             img {
                 width: 100%;
@@ -125,6 +129,7 @@ img {
 
 .sidemenu {
     li {
+        //border-bottom: 1px solid #666;
         width: 100%;
 
         a {
@@ -134,25 +139,47 @@ img {
             @include fz(20);
             font-weight: 700;
             text-transform: uppercase;
+            letter-spacing: 1.5px;
             width: 100%;
-            color: #000;
+            color: $color_black;
             position: relative;
-            &:after {
+
+            &::before {
                 content: '';
-                width: 0;
+                width: 0%;
                 position: absolute;
                 background-color: $color_orange;
-                height: 4px;
-                top: 38px;
-                left: 16%;
-                transform: translateX(-50%);
+                height: 2px;
+                top: 0px;
+                left: 0;
+                //transform: translateX(-50%);
+                transition: all .4s ease;
+            }
+
+            &:after {
+                content: '';
+                width: 0%;
+                position: absolute;
+                background-color: $color_orange;
+                opacity: .5;
+                height: 100%;
+                bottom: 0px;
+                left: 0;
+                //transform: translateX(-50%);
                 transition: all .3s ease;
             }
+
             &:hover {
                 text-decoration: none;
-        
+                //background-color: rgb(219, 219, 219);
+
+                /*&::before {
+                    width: 100%;
+                }*/
+
                 &:after {
-                    width: 25%;
+                    width: 100%;
+                    opacity: .1;
                 }
             }
         }
@@ -169,11 +196,14 @@ img {
     }
 }
 
+
 .container {
-    max-width: 1170px;
     width: 90%;
+    max-width: 1170px;
     margin: 0 auto;
 }
+
+
 
 header {
     position: fixed;
@@ -200,7 +230,7 @@ header {
 
             li {
                 +li {
-                    margin-left: 15px;
+                    margin-left: 10px;
                 }
             }
         }
@@ -259,6 +289,13 @@ header {
     }
 }
 
+
+/*
+main {
+    padding-top:80px;
+}*/
+
+
 .fresh_section {
     background-color: #fff;
     background-position: center center;
@@ -268,10 +305,11 @@ header {
     min-height: 40vh;
     display: flex;
     align-items: center;
-    
+
     .content_fresh {
         width: 30%;
-        
+
+
         h1 {
             color: $color_black;
             @include fz(62);
@@ -283,18 +321,22 @@ header {
             @include p($color_black);
             font-weight: 400;
         }
+
         .btn_orange {
             @include btn($color_orange);
             margin-top: 18px;
-            
+
+
             &:hover {
                 background-color: darken($color_orange, 20);
             }
         }
     }
+
     .fresh_mouse {
         display: flex;
         justify-content: center;
+
         width: 100%;
 
         img {
@@ -303,24 +345,30 @@ header {
             position: absolute;
             bottom: 40px;
         }
-    } 
+    }
+
 }
 
-.btn_orange {    
-    @include btn($color_orange);      
+.btn_orange {
+    @include btn($color_orange);
     margin-top: 18px;
+
     &:hover {
-    background-color: darken($color_orange, 20);
+        background-color: darken($color_orange, 20);
     }
 }
+
 
 .about_section {
     background-color: $color_turquoise;
     padding: 7vh 0;
+
     .bloks_about {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .img_about {}
 
         .text_about {
             width: 40%;
@@ -341,23 +389,28 @@ header {
 .section_services {
     padding: 7vh 0;
     background-color: $color_lightblue;
+
     .block_servises {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-        > div {
+
+        >div {
             width: 50%;
         }
+
         .block_servises_left {
             padding-left: 100px;
-            padding-top:79px;
+            padding-top: 79px;
+
             .block_link {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            height: 490px;
-            width: 80%;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 490px;
+                width: 80%;
+
                 li {
                     background-color: white;
                     display: flex;
@@ -384,16 +437,19 @@ header {
                         height: 100%;
                         border-left: 1px solid #9d9d9d;
                         cursor: pointer;
-                        img {
+
+                        svg {
                             width: 70%;
                         }
                     }
                 }
+
                 li:hover {
                     transform: scale(1.05);
                 }
             }
         }
+
         .block_servises_right {
             background-color: $color_lightblue;
             background-position: right top;
@@ -403,9 +459,10 @@ header {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+
             .services_name {
                 h2 {
-                    @include h2($color_white);                   
+                    @include h2($color_white);
                     text-align: right;
                     @include fz(87);
                 }
@@ -418,7 +475,7 @@ header {
     background-color: $color_yellow;
     text-align: center;
     padding: 7vh 0;
-    
+
     img {
         width: 100%;
         height: 100%;
@@ -429,10 +486,12 @@ header {
     .gallery_text {
         text-align: center;
         margin-bottom: 45px;
+
         h2 {
             @include h2($color_black);
             margin-bottom: 20px;
         }
+
         p {
             @include p($color_black);
             font-weight: 400;
@@ -443,59 +502,68 @@ header {
 
     .gallery_pic {
         margin-bottom: 40px;
+
         .big_small {
             display: flex;
             justify-content: space-between;
             align-items: stretch;
             margin-bottom: 30px;
+
             .pic_big {
                 width: calc(66.6666% - 15px);
             }
+
             .two_small_pic {
                 width: calc(33.3333% - 15px);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
                 .pic {
                     height: calc(50% - 15px);
                 }
+
             }
         }
+
         .two_middle_pic {
             display: flex;
             justify-content: space-between;
+
             .pic {
                 width: calc(50% - 15px);
             }
         }
-    }    
+    }
+
     .btn_blue_gallery {
-        @include btn ($color_darkblue);    
+        @include btn ($color_darkblue);
+
         &:hover {
             background-color: darken($color_darkblue, 20);
         }
     }
 }
 
+
 .section_subscribe {
-    padding: 15vh 0;
-    background-color: #fff;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 10vh 0;
+    background: url(../images/background_sub.png) center center no-repeat;
 }
 
 .subscribe_text {
     width: 50%;
-    margin-bottom: 30px;       
+    margin-bottom: 30px;
+
     h2 {
         @include h2($color_black);
         text-align: left;
         @include fz(40);
         margin-bottom: 15px;
     }
+
     p {
-         @include p($color_black);
+        @include p($color_black);
         font-weight: 400;
     }
 }
@@ -511,11 +579,12 @@ header {
         width: 575px;
         height: 55px;
         border: none;
-        padding-left: 20px;            
-        @include p($color_black); 
-        font-family: 'Raleway', sans-serif; 
-        border: 1px solid black;          
+        padding-left: 20px;
+        @include p($color_black);
+        font-family: 'Raleway', sans-serif;
+        border: 1px solid black;
         @include fz(15);
+
         &::placeholder {
             font-weight: 400;
         }
@@ -524,9 +593,11 @@ header {
 
 .btn_subscribe {
     width: 50%;
+
     .btn_green {
         @include btn($color_lightgreen);
         width: 170px;
+
         &:hover {
             background-color: darken($color_lightgreen, 20);
         }
@@ -536,14 +607,17 @@ header {
 .blog_section {
     background-color: $color_violet;
     padding: 7vh 0;
+
     .flex_blog {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
+
         .articles {
-            display: flex;            
+            display: flex;
             justify-content: center;
             margin-bottom: 50px;
+
             .block_blog {
                 margin-left: 15px;
                 margin-right: 15px;
@@ -553,6 +627,7 @@ header {
                 position: relative;
                 box-shadow: 0px 4px 10px #504f4f;
                 transition: all .2s linear;
+
                 &:hover .date_block_blog {
                     background-color: rgba($color: $color_black, $alpha: 0.4);
                     opacity: 1;
@@ -602,6 +677,7 @@ header {
                     height: 310px;
                     object-fit: cover;
                 }
+
                 .text_img_section_blog {
                     position: absolute;
                     color: $color_white;
@@ -615,6 +691,7 @@ header {
                         line-height: 26px;
                         padding-bottom: 15px;
                     }
+
                     .p_text_img_section_blog {
                         @include fz(16);
                     }
@@ -629,7 +706,7 @@ header {
     margin-bottom: 25px;
 }
 
-.p_blog  {
+.p_blog {
     @include p($color_white);
     text-align: center;
     margin-left: auto;
@@ -640,10 +717,13 @@ header {
 
 .btn_red {
     @include btn($color_red);
+
     &:hover {
-    background-color: darken($color_red, 20);
+        background-color: darken($color_red, 20);
     }
 }
+
+
 
 .contact_section {
     //background: url(../images/background_contact.png) no-repeat top center /cover;
@@ -656,34 +736,36 @@ header {
 
 .name_contact_section {
     display: flex;
-    flex-direction: column;        
+    flex-direction: column;
     align-items: center;
     margin-bottom: 25px;
+
     h2 {
         @include h2($color_black);
         margin-bottom: 25px;
     }
+
     p {
         @include p($color_black);
         text-align: center;
         width: 30%;
-        font-weight: 400; 
+        font-weight: 400;
     }
 }
 
 .blocks_contact {
-    display: flex;    
+    display: flex;
     justify-content: space-between;
 }
 
-.contact_block_left{
+.contact_block_left {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .contact_form {
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
 }
 
 .form {
@@ -693,14 +775,31 @@ header {
     height: 50px;
     color: $color_white;
     padding-left: 25px;
+    @include fz(16);
+
+    &:hover:focus {
+        font-weight: 200;
+        background-color: $color_turquoise;
+    }
+
+    &:focus {
+        border-left: 4px solid $color_darkblue;
+    }
+
     &:hover {
         background-color: $color_turquoise;
-        border-left: 4px solid $color_darkblue;
+        //border-left: 4px solid $color_darkblue;
         font-weight: 600;
+
         &::placeholder {
             font-weight: 600;
         }
+
+        &:focus::placeholder {
+            font-weight: 400;
+        }
     }
+
     &::placeholder {
         font-family: 'Raleway', sans-serif;
         @include p($color_white);
@@ -721,10 +820,12 @@ header {
 
 .our_contacts {
     margin-bottom: 15px;
+
     h5 {
         text-transform: uppercase;
         @include fz(18);
     }
+
     a {
         text-decoration: none;
         color: $color_black;
@@ -734,10 +835,12 @@ header {
 
 .btn_blue {
     @include btn($color_darkblue);
+
     &:hover {
         background-color: darken($color_darkblue, 20);
-        }
+    }
 }
+
 
 footer {
     height: 90px;

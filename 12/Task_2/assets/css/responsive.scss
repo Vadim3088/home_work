@@ -182,7 +182,7 @@ $base_size:16;
     }           
 }
 
-@media screen and (max-width:1020px){
+@media screen and (max-width:1000px){
     .section_services {
         .container {
             .block_servises {
@@ -604,6 +604,58 @@ $base_size:16;
         }
     }
 
+    .section_gallery {
+        .container {
+            .gallery_text {
+                h2 {
+                    
+                }
+                p {
+                    
+                }
+            }
+            .gallery_pic {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                .big_small {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .pic_big {
+                        width: 100%;
+                        margin-bottom: 20px;                       
+                    }
+                    .two_small_pic {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;                         
+                        .pic {
+                            width: calc(50% - 10px); 
+                            height: 100%;
+                        }
+                    }
+                }
+                .two_middle_pic {
+                    display: flex;
+                    justify-content: space-between;
+                
+                    .pic {
+                        width: calc(50% - 10px);
+                        //margin-bottom: 20px;
+                    }
+                    
+                }
+            }
+            .btn_blue_gallery {
+                
+            }
+        }
+    }
+
     .section_subscribe {
         .subscribe_text {
             width: 63%;
@@ -992,9 +1044,7 @@ $base_size:16;
             }
         }
     }
-    .section_subscribe .lazy-bg {
-        overflow: hidden;
-    }
+
 
     .blog_section {
         .container {

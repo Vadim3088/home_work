@@ -178,26 +178,41 @@ img {
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
   width: 100%;
   color: #000;
   position: relative;
 }
-.sidemenu li a:after {
+.sidemenu li a::before {
   content: "";
-  width: 0;
+  width: 0%;
   position: absolute;
   background-color: #ff6033;
-  height: 4px;
-  top: 38px;
-  left: 16%;
-  transform: translateX(-50%);
+  height: 2px;
+  top: 0px;
+  left: 0;
+  transition: all 0.4s ease;
+}
+.sidemenu li a:after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  background-color: #ff6033;
+  opacity: 0.5;
+  height: 100%;
+  bottom: 0px;
+  left: 0;
   transition: all 0.3s ease;
 }
 .sidemenu li a:hover {
   text-decoration: none;
+  /*&::before {
+      width: 100%;
+  }*/
 }
 .sidemenu li a:hover:after {
-  width: 25%;
+  width: 100%;
+  opacity: 0.1;
 }
 
 .open #page_overlay {
@@ -208,8 +223,8 @@ img {
 }
 
 .container {
-  max-width: 1170px;
   width: 90%;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -235,7 +250,7 @@ header #header_menu ul {
   align-items: center;
 }
 header #header_menu ul li + li {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 header.scrolled {
   height: 60px;
@@ -284,6 +299,10 @@ header.scrolled {
   height: 40px;
 }
 
+/*
+main {
+    padding-top:80px;
+}*/
 .fresh_section {
   background-color: #fff;
   background-position: center center;
@@ -436,7 +455,7 @@ header.scrolled {
   border-left: 1px solid #9d9d9d;
   cursor: pointer;
 }
-.section_services .block_servises .block_servises_left .block_link li .image_link img {
+.section_services .block_servises .block_servises_left .block_link li .image_link svg {
   width: 70%;
 }
 .section_services .block_servises .block_servises_left .block_link li:hover {
@@ -538,11 +557,8 @@ header.scrolled {
 }
 
 .section_subscribe {
-  padding: 15vh 0;
-  background-color: #fff;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 10vh 0;
+  background: url(../images/background_sub.png) center center no-repeat;
 }
 
 .subscribe_text {
@@ -787,14 +803,24 @@ header.scrolled {
   height: 50px;
   color: #fff;
   padding-left: 25px;
+  font-size: 1rem;
+}
+.form:hover:focus {
+  font-weight: 200;
+  background-color: #00b1b1;
+}
+.form:focus {
+  border-left: 4px solid #5585a2;
 }
 .form:hover {
   background-color: #00b1b1;
-  border-left: 4px solid #5585a2;
   font-weight: 600;
 }
 .form:hover::placeholder {
   font-weight: 600;
+}
+.form:hover:focus::placeholder {
+  font-weight: 400;
 }
 .form::placeholder {
   font-family: "Raleway", sans-serif;
