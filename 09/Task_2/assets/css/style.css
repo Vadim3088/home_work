@@ -24,10 +24,13 @@ body {
 }
 
 .block_content {
-    display: flex;
+    /*display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
     gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .block_content_img img {
@@ -36,6 +39,11 @@ body {
 
 .main_content {
     position: relative;
+    grid-column-start: span 2;
+}
+
+.main_content_img img {
+    width: 100%;
 }
 
 .main_content_text {
@@ -96,6 +104,25 @@ body {
     position: absolute;
     bottom: 22px;
     left: 25px;
+}
+
+.loader {
+    color: rgb(133, 133, 133);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    right: 150px;
+    padding: 30px 0;;
+}
+
+.loader img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;    
+}
+
+.loader p {
+    line-height: 25px;
 }
 
 @font-face {
