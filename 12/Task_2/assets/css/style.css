@@ -299,10 +299,6 @@ header.scrolled {
   height: 40px;
 }
 
-/*
-main {
-    padding-top:80px;
-}*/
 .fresh_section {
   background-color: #fff;
   background-position: center center;
@@ -418,8 +414,10 @@ main {
   width: 50%;
 }
 .section_services .block_servises .block_servises_left {
-  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 79px;
+  display: flex;
+  justify-content: end;
 }
 .section_services .block_servises .block_servises_left .block_link {
   list-style: none;
@@ -451,12 +449,14 @@ main {
   justify-content: center;
   align-items: center;
   width: 25%;
+  min-width: 107.5px;
+  max-width: 107.5px;
   height: 100%;
   border-left: 1px solid #9d9d9d;
   cursor: pointer;
 }
 .section_services .block_servises .block_servises_left .block_link li .image_link svg {
-  width: 70%;
+  width: 50%;
 }
 .section_services .block_servises .block_servises_left .block_link li:hover {
   transform: scale(1.05);

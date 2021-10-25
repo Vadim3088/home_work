@@ -290,12 +290,6 @@ header {
 }
 
 
-/*
-main {
-    padding-top:80px;
-}*/
-
-
 .fresh_section {
     background-color: #fff;
     background-position: center center;
@@ -389,28 +383,25 @@ main {
 .section_services {
     padding: 7vh 0;
     background-color: $color_lightblue;
-
     .block_servises {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-
-        >div {
+        > div {
             width: 50%;
         }
-
         .block_servises_left {
-            padding-left: 100px;
-            padding-top: 79px;
-
+            padding-right: 100px;
+            padding-top:79px;
+            display: flex;
+            justify-content: end;
             .block_link {
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                height: 490px;
-                width: 80%;
-
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 490px;
+            width: 80%;
                 li {
                     background-color: white;
                     display: flex;
@@ -434,22 +425,21 @@ main {
                         justify-content: center;
                         align-items: center;
                         width: 25%;
+                        min-width: 107.5px;
+                        max-width: 107.5px;
                         height: 100%;
                         border-left: 1px solid #9d9d9d;
                         cursor: pointer;
-
                         svg {
-                            width: 70%;
+                            width: 50%;
                         }
                     }
                 }
-
                 li:hover {
                     transform: scale(1.05);
                 }
             }
         }
-
         .block_servises_right {
             background-color: $color_lightblue;
             background-position: right top;
@@ -459,10 +449,9 @@ main {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-
             .services_name {
                 h2 {
-                    @include h2($color_white);
+                    @include h2($color_white);                   
                     text-align: right;
                     @include fz(87);
                 }
