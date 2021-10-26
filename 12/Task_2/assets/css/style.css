@@ -205,7 +205,7 @@ img {
 }
 .sidemenu li a:active {
   background-color: #ff6033;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .open #page_overlay {
