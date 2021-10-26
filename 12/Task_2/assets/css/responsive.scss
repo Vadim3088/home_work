@@ -348,6 +348,7 @@ $base_size:16;
                             top: 15px;
                         }
                         
+
                     }
                 }
                 .btn_red {
@@ -462,26 +463,20 @@ $base_size:16;
                     margin-bottom: 16px;
                     .pic_big {
                         width: calc(66.6666% - 8px);
-                        &:hover {
-                            transform: scale(1.2)
-                        }
+                        
                     }
                     .two_small_pic {
                         width: calc(33.3333% - 8px);
                         .pic {
                             height: calc(50% - 8px);
-                            &:hover {
-                                transform: scale(1.2)
-                            }
+                            
                         }
                     }
                 }
                 .two_middle_pic {
                     .pic {
                         width: calc(50% - 8px);
-                        &:hover {
-                            transform: scale(1.2)
-                        }
+                        
                     }
                 }
             }

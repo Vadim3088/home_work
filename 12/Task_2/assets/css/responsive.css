@@ -231,23 +231,14 @@
   .section_gallery .container .gallery_pic .big_small .pic_big {
     width: calc(66.6666% - 8px);
   }
-  .section_gallery .container .gallery_pic .big_small .pic_big:hover {
-    transform: scale(1.2);
-  }
   .section_gallery .container .gallery_pic .big_small .two_small_pic {
     width: calc(33.3333% - 8px);
   }
   .section_gallery .container .gallery_pic .big_small .two_small_pic .pic {
     height: calc(50% - 8px);
   }
-  .section_gallery .container .gallery_pic .big_small .two_small_pic .pic:hover {
-    transform: scale(1.2);
-  }
   .section_gallery .container .gallery_pic .two_middle_pic .pic {
     width: calc(50% - 8px);
-  }
-  .section_gallery .container .gallery_pic .two_middle_pic .pic:hover {
-    transform: scale(1.2);
   }
   .section_gallery .container .btn_blue_gallery {
     width: 150px;

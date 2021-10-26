@@ -183,22 +183,12 @@ img {
   color: #000;
   position: relative;
 }
-.sidemenu li a::before {
-  content: "";
-  width: 0%;
-  position: absolute;
-  background-color: #ff6033;
-  height: 2px;
-  top: 0px;
-  left: 0;
-  transition: all 0.4s ease;
-}
 .sidemenu li a:after {
   content: "";
   width: 0%;
   position: absolute;
   background-color: #ff6033;
-  opacity: 0.5;
+  opacity: 0.2;
   height: 100%;
   bottom: 0px;
   left: 0;
@@ -212,7 +202,10 @@ img {
 }
 .sidemenu li a:hover:after {
   width: 100%;
-  opacity: 0.1;
+}
+.sidemenu li a:active {
+  background-color: #ff6033;
+  opacity: 0.2;
 }
 
 .open #page_overlay {

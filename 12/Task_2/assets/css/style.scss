@@ -28,7 +28,6 @@
     color: $color;
     font-weight: 200;
     font-size: 1rem;
-    ;
     line-height: 25px;
 }
 
@@ -129,7 +128,6 @@ img {
 
 .sidemenu {
     li {
-        //border-bottom: 1px solid #666;
         width: 100%;
 
         a {
@@ -144,24 +142,12 @@ img {
             color: $color_black;
             position: relative;
 
-            &::before {
-                content: '';
-                width: 0%;
-                position: absolute;
-                background-color: $color_orange;
-                height: 2px;
-                top: 0px;
-                left: 0;
-                //transform: translateX(-50%);
-                transition: all .4s ease;
-            }
-
             &:after {
                 content: '';
                 width: 0%;
                 position: absolute;
                 background-color: $color_orange;
-                opacity: .5;
+                opacity: .2;
                 height: 100%;
                 bottom: 0px;
                 left: 0;
@@ -179,8 +165,12 @@ img {
 
                 &:after {
                     width: 100%;
-                    opacity: .1;
+                    //opacity: .1;
                 }
+            }
+            &:active {
+                background-color: $color_orange;
+                opacity: .2;
             }
         }
     }
