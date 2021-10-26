@@ -66,6 +66,7 @@ body {
                         color: #fff;
                         font-size: 18px;
                         line-height: 20px;
+                        font-weight: 300;
                         opacity: .7;
                         position: relative;
                         cursor: pointer;
@@ -73,7 +74,6 @@ body {
                         border-bottom: 2px solid transparent;                       
 
                         &:hover {
-                            transform: scale(1.05);
                             border-bottom: 2px solid #e66a64;
                             opacity: 1;
                         }
@@ -129,14 +129,16 @@ body {
 
         .form {
             width: 100%;
-
             &__item {
                 input {
                     width: 100%;
                     height: 42px;
                     background-color: none;
-                    outline: none;
                     background: none;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 0 10px;
                 }
             }
 
@@ -160,7 +162,6 @@ body {
                 cursor: pointer;
 
                 &:hover {
-                    transform: scale(1.02);
                     background-color: darken(#23ae92, 5);
                 }
             }
@@ -177,16 +178,16 @@ body {
                     &__item {
                         color: #fff;
                         font-size: 13px;
+                        font-weight: 400;
                         line-height: 20px;
                         opacity: .6;
                         position: relative;
                         cursor: pointer;
-                        border-bottom: 2px solid #473db3; 
+                        border-bottom: 1px solid #756faf; 
                     
                         &:hover {
-                            transform: scale(1.05);
                             opacity: 1;
-                            border-bottom: 2px solid #7e7aa5;
+                            border-bottom: 1px solid #7e7aa5;
                         }
                     }
                 }
