@@ -35,11 +35,11 @@
                         <span>Home</span>
                     </a>
                 </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contacts</a></li>
             </ul>
         </nav>
     </div>
@@ -55,12 +55,12 @@
             </div>
             <nav id="header_menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html#fresh">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
             <div id="hamburger_menu">
@@ -75,7 +75,7 @@
 
     <main>
 
-        <div class="fresh_section lazy-bg" data-src="assets/images/background_fresh.png">
+        <div class="fresh_section lazy-bg" id="fresh" data-src="assets/images/background_fresh.png">
             <div class="container">
                 <div class="content_fresh">
                     <h1>Fresh Life</h1>
@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="about_section">
+        <div class="about_section" id="about">
             <div class="container">
                 <div class="bloks_about">
                     <div class="img_about">
@@ -116,7 +116,7 @@
             </div>
         </div>
  
-        <div class="section_services">
+        <div class="section_services" id="services">
             <div class="container">
                 <div class="block_servises">
                     <div class="block_servises_left">
@@ -165,7 +165,7 @@
             </div>
         </div>
                 
-        <div class="section_gallery">
+        <div class="section_gallery" id="gallery">
             <div class="container">
                 <div class="gallery_text">
                     <h2>Gallery</h2>
@@ -212,7 +212,7 @@
             </div>
         </div>
                          
-        <div class="section_subscribe">
+        <div class="section_subscribe" id="subscribe">
             <div class="container">
                 <div class="subscribe_text">
                     <h2>Subscribe To Us</h2>
@@ -233,7 +233,7 @@
             </div>
         </div>
 
-        <div class="blog_section">
+        <div class="blog_section" id="blog">
             <div class="container">
                 <div class="flex_blog">
 
@@ -290,7 +290,7 @@
             </div>
         </div>
 
-        <div class="contact_section lazy-bg" data-src="assets/images/background_contact.png">
+        <div class="contact_section lazy-bg" id="contact" data-src="assets/images/background_contact.png">
             <div class="container">
                 <div class="name_contact_section">
                     <h2>Contact</h2>
@@ -360,16 +360,20 @@
                     $("header").removeClass("scrolled");
                 }
             });
+            $('input, select').styler();
         });
     </script>
 
-    
     <script>
-        $(function(){
-            $(".hamburger, #page_overlay").on('click', function(){
+        $(function () {
+            $(".hamburger, #page_overlay").on('click', function () {
                 $("#mobile_menu_wrap .hamburger").toggleClass("is-active");
                 $("body").toggleClass("open");
             });
+        });
+        $(".sidemenu a").on('click', () => {
+            $("#mobile_menu_wrap .hamburger").removeClass("is-active");
+            $("body").removeClass("open");
         });
     </script>
 </body>

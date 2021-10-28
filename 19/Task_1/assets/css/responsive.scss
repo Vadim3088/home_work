@@ -28,7 +28,7 @@
 @media screen and (max-width:800px) {
     .section_top {
         grid-template-columns: 1fr 15% 15% 1fr;
-        grid-template-rows: 40% 25% calc(35% - 30px);
+        grid-template-rows: 40% 25% 1fr;
         .pic:first-child {
             grid-area: span 1/span 4;
         }
