@@ -29,7 +29,7 @@
     <meta property="og:description" content="We sell and deliver fresh products">
     <meta property="og:url" content="https://vadim3088.github.io/home_work/20/Task_2/index.html">
     <meta property="og:site_name" content="Cahee">
-    <meta property="og:image" content="https://vadim3088.github.io/home_work/20/Task_2/index.html/assets/images/cahee_og.jpg">
+    <meta property="og:image" content="https://vadim3088.github.io/home_work/20/Task_2/assets/images/cahee_og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 </head>
@@ -339,18 +339,18 @@
                         <button class="btn_blue" type="button">submit</button>
                     </div>
 
-                    <div class="contact_block_right">
-                        <div class="our_contacts">
+                    <div class="contact_block_right" itemscope itemtype="https://schema.org/Organization">
+                        <div class="our_contacts" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <h5>address</h5>
-                            <a href="#">123 City name, Street, City, Country</a>
+                            <a href="#"><span itemprop="streetAddress">City name, Street</span>, <span itemprop="addressLocality">City, Country</span></a>
                         </div>
                         <div class="our_contacts">
                             <h5>email</h5>
-                            <a href="mailto:#">cahee@domain.com</a>
+                            <a href="mailto:cahee@domain.com"><span itemprop="email">cahee@domain.com</span></a>
                         </div>
                         <div class="our_contacts">
                             <h5>phone</h5>
-                            <a href="tel:#">+012 345 6789</a>
+                            <a href="tel:+0123456789"><span itemprop="telephone">+012 345 6789</span></a>
                         </div>
                     </div>
 
