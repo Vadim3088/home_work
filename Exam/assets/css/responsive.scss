@@ -1,3 +1,9 @@
+@mixin fz($size_px) {
+    font-size: ($size_px/$base_size)+rem;
+}
+
+$base_size:16;
+
 @media screen and (max-width:1100px) {
     .choose_block {
         .choose_block_top {
@@ -39,13 +45,28 @@
                 }
             }
             .choose_block_right {
-                //width: 52%;
                 .img_block_top {
                     width: calc(100% - 75px);
                 }
                 .img_block_bottom {
                     width: calc(100% - 75px);
                 }
+            }
+        }
+    }
+    .reviews_block {
+        .reviews_block_name {
+            h2 {
+
+            }
+        }
+        .reviews_block_center {
+            .reviews_block_img {
+                width: 45%;
+            }
+            .reviws_block_text {
+                width: 55%;
+                padding: 30px 30px;
             }
         }
     }
@@ -115,6 +136,17 @@
                 }
             }
         }
+        .choose_block_icons {
+            .image_link {
+                svg {
+                    width: 60px;
+                    height: 60px;
+                }
+                h2 {
+                    @include fz(32); 
+                }
+            }
+        }
     }
 
     .section_block {
@@ -122,10 +154,30 @@
             .container {
                 justify-content: center;
                 .spain_block_content {
-                    width: 65%;
+                    width: 75%;
                     .spain_block_text {
                         text-align: center;
                     }
+                }
+            }
+        }
+    }
+    .reviews_block {
+        .reviews_block_name {
+            padding-bottom: 25px;
+            h2 {
+                @include fz(32);
+            }
+        }
+        .reviews_block_center {
+            .reviews_block_img {
+                width: 50%;
+            }
+            .reviws_block_text {
+                width: 50%;
+                padding: 20px 20px;
+                span {
+                    line-height: 30px;
                 }
             }
         }
@@ -175,6 +227,60 @@
             }
         }
     }
+
+    .block_icons {
+        .container {
+            .dotten_arc {
+                .image_arc {
+                    svg {
+                    }
+                }
+            }
+        }
+        .choose_block_icons {
+            .image_link {
+                svg {
+                    width: 55px;
+                    height: 55px;
+                }
+                h2 {
+                    @include fz(28); 
+                }
+            }
+        }
+    }
+    .section_block {
+        .spain_block {
+            .container {
+                .spain_block_content {
+                    padding: 40px 20px;
+                    .spain_block_text {
+
+                        .btn_blue {
+                            width: 200px;
+                            height: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .reviews_block {
+        .container {
+            .reviews_block_center {
+                flex-direction: column;
+                .reviews_block_img {
+                    width: 100%;
+                }
+                .reviws_block_text {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -196,6 +302,44 @@
             }
         }
     }
+    .section_block {
+        .spain_block {
+            .container {
+                .spain_block_content {
+                    padding: 40px 20px;
+                    width: 100%;
+                    .spain_block_text {
+
+                        .btn_blue {
+                            width: 200px;
+                            height: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .block_icons {
+        .container {
+            .dotten_arc {
+                .image_arc {
+                    svg {
+                    }
+                }
+            }
+        }
+        .choose_block_icons {
+            .image_link {
+                svg {
+                    width: 50px;
+                    height: 50px;
+                }
+                h2 {
+                    @include fz(24); 
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -208,20 +352,133 @@
                     .search_form {
                         .form {
                             width: 350px;
-
                         }
                     }
                     .btn_search {
                         width: 130px;
                         border: none;
-
                     }
+                }
+            }
+        }
+    }
+    .choose_block {
+        .choose_block_top {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            .choose_block_left {
+                width: 100%;
+                text-align: center;
+                h2 {
+                    padding: 20px 0;
+                }
+                .choose_text {
+                    padding-bottom: 10px;
+                }
+                .btn_blue {
+                    width: 200px;
+                    height: 55px;
+                }
+            }
+            .choose_block_right {
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+            }
+        }
+    }
+    .block_icons {
+        .container {
+            .dotten_arc {
+                .image_arc {
+                    svg {
+                    }
+                }
+            }
+        }
+        .choose_block_icons {
+            .image_link {
+                svg {
+                    width: 45px;
+                    height: 45px;
+                }
+                h2 {
+                    @include fz(22); 
                 }
             }
         }
     }
 }
 
-@media screen and (max-width:550px) {
-    
+@media screen and (max-width:450px) {
+    .block_icons {
+        .container {
+            .dotten_arc {
+                .image_arc {
+                    svg {
+                    }
+                }
+            }
+        }
+        .choose_block_icons {
+            .image_link {
+                svg {
+                    width: 45px;
+                    height: 45px;
+                }
+                h2 {
+                    @include fz(16); 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .search_block {
+        .container {
+            .header_form {
+                h3 {
+                    @include fz(24);
+                    letter-spacing: 5.5px;
+                    line-height: 50px;
+                    margin-bottom: 20px; 
+                }
+                .header_search_form {
+                    .search_form {
+                        .form {
+                            width: 320px;
+                            height: 40px;
+                        }
+                    }
+                    .btn_search {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .section_block {
+        .spain_block {
+            .container {
+                .spain_block_content {
+                    padding: 20px 20px;
+                    width: 100%;
+                    .spain_block_text {
+
+                        .btn_blue {
+                            width: 200px;
+                            height: 55px;
+                        }
+                        p {
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
 }

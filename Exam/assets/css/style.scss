@@ -304,7 +304,13 @@ img {
         align-items: center;
 
         #logo {
-            width: 15%;
+            width: 20%;
+            a {
+                img {
+                    width: 155px;
+                    height: 20px;
+                }
+            }
         }
 
         #header_menu {
@@ -428,16 +434,18 @@ img {
     }
 
     .dotten_arc {
-        width: 66%;
+        width: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .image_arc {
-            //width: 100%;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
             svg {
-                width: 90%;
+                width: 270px;
+                height: 70px;
             }
         }
     }
@@ -463,6 +471,7 @@ img {
             h2 {
                 color: $color_white;
                 @include fz(40);
+                text-align: center;
             }
         }
     }
@@ -557,6 +566,7 @@ img {
         text-align: center;
         color: $color_white;
         z-index: 2;
+        padding-bottom: 40px;
 
         h2 {
             line-height: 80px;
@@ -569,14 +579,22 @@ img {
         justify-content: space-between;
         position: relative;
         z-index: 2;
+        width: 100%;
 
         .reviews_block_img {
-            width: 40%;
+            width: 35%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         .reviws_block_text {
-            width: 60%;
+            width: 65%;
             background-color: $color_grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             padding: 40px 40px;
 
             span {
@@ -600,10 +618,6 @@ img {
                     @include p($color_white);
                     display: inline;
                 }
-            }
-
-            p {
-                @include p($color_white);
             }
         }
     }
