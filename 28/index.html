@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Виконай додавання 0,1 і 0,2 добийся математично правильної відповіді.</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="sum()">Додавання</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Виконай додавання рядка "1" і цифри 2 (обидві операнди повинні бути в змінних), добийся математично правильної відповіді.</p>
+                </div>
+                <button class="w-25 btn btn-success text-light rounded-3 mt-2" onclick="sumStr()">Додавання</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.</p>
+                </div>
+                <button class="w-25 btn btn-danger text-light rounded-3 mt-2" onclick="fleshka()">Флешка</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.</p>
+                </div>
+                <button class="w-25 btn btn-warning text-light rounded-3 mt-2" onclick="chokolate()">Шоколадка</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор% (залишок від ділення).</p>
+                </div>
+                <button class="w-25 btn btn-primary text-light rounded-3 mt-2" onclick="conversely()">Навпаки</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.</p>
+                </div>
+                <button class="w-25 btn btn-warning text-light rounded-3 mt-2" onclick="percent()">Відсотки</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Що повернуть вираження:</p>
+                </div>
+                <button class="w-25 btn btn-danger text-light rounded-3 mt-2" onclick="but1()">2 && 0 && 3</button>
+                <button class="w-25 btn btn-danger text-light rounded-3 mt-2" onclick="but2()">2 || 0 || 3</button>
+                <button class="w-25 btn btn-danger text-light rounded-3 mt-2" onclick="but3()">2 && 0 || 3</button>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="assets/js/main_hw.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
