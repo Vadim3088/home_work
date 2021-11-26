@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай ім’я користувача та виведи у відповідь “Привіт, *ім’я*”</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="helloName()">ім’я</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай рік народження користувача, порахуй його/її вік і виведи результат. Поточний рік вкажи в коді як константу;</p>
+                </div>
+                <button class="w-25 btn btn-success text-light rounded-3 mt-2" onclick="yourAge()">Ваш вік</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача довжину сторони квадрату і виведи периметр цього квадрата</p>
+                </div>
+                <button class="w-25 btn btn-danger text-light rounded-3 mt-2" onclick="perimeter()">Периметр</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача радіус кола і виведи площу такої окружності.</p>
+                </div>
+                <button class="w-25 btn btn-warning text-light rounded-3 mt-2" onclick="area()">Площа</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача відстань в кілометрах між двома містами і за скільки годин він хоче дістатися. Порахуй швидкість, з якою необхідно рухатися, щоб встигнути вчасно.</p>
+                </div>
+                <button class="w-25 btn btn-primary text-light rounded-3 mt-2" onclick="speed()">Швидкість</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Реалізуй конвертор валют. Користувач вводить долари, програма переводить їх в євро. Курс валют зберігається в константі.</p>
+                </div>
+                <button class="w-25 btn btn-primary text-light rounded-3 mt-2" onclick="currency()">Конвертор</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="assets/js/main_hw.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
