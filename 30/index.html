@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Створи функцію, яка буде виводити кількість переданих їй аргументів.</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="chekArg()">Аргументи</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Напиши функцію, яка приймає 2 числа і повертає :
+                        -1, якщо перше число менше, ніж друге; 
+                        1 - якщо перше число більше, ніж друге; 
+                        0 - якщо числа рівні.</p>
+                </div>
+                <button class="w-25 btn btn-success text-light rounded-3 mt-2" onclick="getNumber()">Число</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Напиши функцію, яка обчислює факторіал переданого їй числа.</p>
+                </div>
+                <button class="w-25 btn btn-primary text-light rounded-3 mt-2" onclick="getFactorial()">Факторіал</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="createNumber()">Число</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.</p>
+                </div>
+                <button class="w-25 btn btn-success text-light rounded-3 mt-2" onclick="calcArea()">Площа</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, яке дорівнює сумі всіх своїх дільників.</p>
+                </div>
+                <button class="w-25 btn btn-primary text-light rounded-3 mt-2" onclick="chekNumber()">Досконалість</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="perfectNumber()">Досконалі</button>            
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
