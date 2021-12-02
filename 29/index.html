@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача його вік і визначи, ким він є: дитиною (0-12), підлітком (12-18), дорослим (18_60) або пенсіонером (60 ...), передбач можливість введення невірних даних.</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="yourAge()">Вік</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача число від 0 до 9 і виведи йому спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).</p>
+                </div>
+                <button class="w-25 btn btn-success text-light rounded-3 mt-2" onclick="specialSymbol()">Спецсимвол</button>
+            </div>
+
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Підрахуй суму всіх чисел в заданому користувачем діапазоні.</p>
+                </div>
+                <button class="w-25 btn btn-primary text-light rounded-3 mt-2" onclick="rangeOfNumbers()">Число</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача 2 числа і знайди найбільший спільний дільник.</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="commonDivisor()">Дільник</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача число і виведи всі дільники цього числа.</p>
+                </div>
+                <button class="w-25 btn btn-success text-light rounded-3 mt-2" onclick="divider()">Дільники</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.</p>
+                </div>
+                <button class="w-25 btn btn-primary text-light rounded-3 mt-2" onclick="palindrom()">Паліндром</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
+                        1. від 200 до 300 - знижка буде 3%; 
+                        2. від 300 до 500 - 5%;
+                        3. від 500 і вище - 7%.</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="amountOfPurchases()">Оплата</button>
+            </div>
+ 
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Зацикли висновок днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.</p>
+                </div>
+                <button class="w-25 btn btn-success text-light rounded-3 mt-2" onclick="nextDay()">День</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запросить у пользователя трехзначное число и проверить, есть ли в нем одинаковые цифры.</p>
+                </div>
+                <button class="w-25 btn btn-primary text-light rounded-3 mt-2" onclick="isMatched()">Цифры</button>
+            </div>
+
+            <div class="container w-50 d-flex flex-column m-4">
+                <div class="rounded-3 bg-dark bg-gradient text-light">
+                    <p class="m-2">Запросить у пользователя год и проверить, високосный он или нет. Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.</p>
+                </div>
+                <button class="w-25 btn btn-info text-light rounded-3 mt-2" onclick="leapYear()">Год</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="multi_table"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
