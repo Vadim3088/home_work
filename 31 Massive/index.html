@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/panel/panel.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add product to cart</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="Enter product title" id="prod_name">
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="form-control" placeholder="Qty" min="1" value="1" id="prod_qty">
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="form-control" placeholder="Price" min="0" id="prod_price">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-end">
+                        <button class="btn btn-info" onclick="checkAndAddProduct()">Add</button>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h4>CART</h4>
+                        <button class="btn btn-primary" onclick="changeSort()">Sort</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td class="text-center">Name</td>
+                                    <td class="text-center">Buy</td>
+                                    <td class="text-center">Price</td>
+                                    <td class="text-center">Qty</td>
+                                    <td class="text-center">Total</td>
+                                    <td class="text-center">Actions</td>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4"><b>Total bought</b></td>
+                                    <td class="text-end"><span id="total_bought"></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>Total not bought</b></td>
+                                    <td class="text-end"><span id="total_notbought"></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>Total</b></td>
+                                    <td class="text-end"><span id="total"></span></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                            <tbody id="cart_list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h4>BILL</h4>
+                        <button class="btn btn-primary" onclick="printBill()">Print</button>
+                    </div>
+                    <div class="card-body">
+                        <ul id="bill_wrap"></ul>
+                    </div>
+                    <div class="card-footer">
+                        <b>Total: <span id="total_bill"></span></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/plugins/panel/panel.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
