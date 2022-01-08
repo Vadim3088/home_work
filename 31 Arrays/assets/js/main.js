@@ -129,6 +129,7 @@ function changeSort(){
     cartSort = (cartSort=='asc')?'desc':'asc'; 
     shoppingList();
 }
+shoppingList();
 
 const buyProduct = (ind) => {
     if(typeof CART[ind]!=='undefined'){
@@ -167,5 +168,3 @@ const deleteFromCart = (index_tovara_dlaya_udalenija)=>{
         panel.danger('Not found product for remove', true);
     }
 }
-
-shoppingList()
